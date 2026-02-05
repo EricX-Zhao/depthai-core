@@ -1,11 +1,13 @@
 cmake -B build_arm64 -S . \
       -DCMAKE_BUILD_TYPE=Release \
-      -DCMAKE_TOOLCHAIN_FILE=/depthai_ws/src/depthai-core/cmake/vcpkg.cmake \
       -DVCPKG_TARGET_TRIPLET=arm64-linux \
+      -DCMAKE_TOOLCHAIN_FILE=/workspace/src/depthai-core/cmake/vcpkg.cmake \
+      -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=/opt/cmake/rk3588.toolchain.cmake \
       -DDEPTHAI_VCPKG_INTERNAL_ONLY=OFF \
       -DDEPTHAI_ENABLE_APRIL_TAG=OFF \
       -DDEPTHAI_ENABLE_PROTOBUF=OFF \
       -DDEPTHAI_ENABLE_MP4V2=OFF \
       -DDEPTHAI_BASALT_SUPPORT=OFF \
       -DDEPTHAI_NEW_FIND_PYTHON=OFF \
-      -DDEPTHAI_JSON_EXTERNAL=ON
+      -DDEPTHAI_JSON_EXTERNAL=ON \
+      -DPython3_EXECUTABLE=/usr/bin/python3
