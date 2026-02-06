@@ -1,7 +1,7 @@
 #include "depthai/utility/Compression.hpp"
 
-#include <fmt/format.h>
-#include <fmt/std.h>
+#include <spdlog/fmt/fmt.h>
+#include <spdlog/fmt/std.h>
 
 #include <cassert>
 #include <filesystem>

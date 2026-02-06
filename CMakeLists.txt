@@ -791,7 +791,7 @@ target_link_libraries(${TARGET_CORE_NAME}
     INTERFACE
         XLinkPublic
     PRIVATE
-        fmt::fmt
+        # fmt::fmt
         yaml-cpp::yaml-cpp
         spdlog::spdlog
         XLink

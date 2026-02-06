@@ -15,8 +15,6 @@
         "neargye-semver",
         "magic-enum",
         "eigen3",
-        "spdlog",
-        "fmt",
         {
             "name": "libarchive",
             "default-features": false

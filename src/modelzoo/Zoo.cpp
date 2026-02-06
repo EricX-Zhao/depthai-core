@@ -6,8 +6,8 @@
     #include <cctype>
 #endif
 
-#include <fmt/format.h>
-#include <fmt/std.h>
+#include <spdlog/fmt/fmt.h>
+#include <spdlog/fmt/std.h>
 
 #include <filesystem>
 #include <iostream>
